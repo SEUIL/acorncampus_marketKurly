@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="marketK_footer.css">
+    <link rel="stylesheet" href="/css/marketK_footer.css">
 
 </head>
 <body>    
@@ -20,7 +20,7 @@
                     <p>월~토요일 오전7시-오후6시</p>
                 </div>
                 <div class="ft_button">
-                    <button>카카오톡문의</button>
+                    <button id="kakao" onclick="popup()">카카오톡문의</button>
                     <p>월~토요일 | 오전 7시~오후 6시 <br>
                     일/공휴일 | 오전 7시~오후1시</p>
                 </div>
@@ -30,7 +30,7 @@
                     고객센터 운영시간에 순차적으로 답변드리겠습니다.</p>
                 </div>
                 <div class="ft_button">
-                    <button>대량주문문의</button>
+                    <button id="mass">대량주문문의</button>
                     <p>월~금요일 | 오전 9시~오후 6시 <br>
                     점심시간 | 낮12시~오후1시</p>
                 </div>    
@@ -90,5 +90,14 @@
             <p>© KURLY CORP. ALL RIGHTS RESERVED</p>
         </div>
     </footer>
+    <script>
+        function popup( ){
+            alert("카카오톡으로 이동하시겠습니까?");
+        }
+
+        function mass(){
+            
+        }
+    </script>
 </body>
 </html>
