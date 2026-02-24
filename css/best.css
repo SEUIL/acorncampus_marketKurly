@@ -286,6 +286,7 @@
       .best_items_i li {
          width:33%;
           padding-bottom: 40px;
+          position: relative;
       }
 
       .best_items_i li a {
@@ -375,3 +376,18 @@
        }
 
 
+
+       /* 쿠폰증정 */
+       .best_coupon {
+        background-color: var(--sub-purple);
+        color: #fff;
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        padding: 5px 0px;
+        text-align: center;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+       }
+      
