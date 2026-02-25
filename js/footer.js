@@ -6,24 +6,24 @@ function initializeFooter() {
     const kakaoBtn = footer.querySelector("#kakao");
     const personalBtn = footer.querySelector("#personal");
     const massBtn = footer.querySelector("#mass");
-    const modal = footer.querySelector("#footer-modal"); // footer-modal을 찾도록 수정
-    const closeBtn = modal.querySelector(".closeBtn");
+    const modalFooter = footer.querySelector("#footer-modal"); // footer-modal을 찾도록 수정
+    const closeBtnFooter = modalFooter.querySelector(".closeBtn");
 
     // '카카오톡 문의' 버튼 클릭 시 모달 열기
     kakaoBtn.addEventListener("click", function () {
-        modal.classList.add("active");
+        modalFooter.classList.add("active");
     });
 
     // 모달의 '확인' 버튼 클릭 시 모달 닫기
-    closeBtn.addEventListener("click", function () {
-        modal.classList.remove("active");
+    closeBtnFooter.addEventListener("click", function () {
+        modalFooter.classList.remove("active");
         window.open("https://accounts.kakao.com/login/?continue=https%3A%2F%2Fpf.kakao.com%2F_xcSDxjxl%2Fchat#login", "_blank");
     });
 
     // 모달 바깥 영역 클릭 시 닫기
-    modal.addEventListener("click", function (e) {
-        if (e.target === modal) {
-            modal.classList.remove("active");
+    modalFooter.addEventListener("click", function (e) {
+        if (e.target === modalFooter) {
+            modalFooter.classList.remove("active");
         }
     });
 

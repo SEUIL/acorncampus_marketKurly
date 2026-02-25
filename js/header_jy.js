@@ -33,13 +33,13 @@ function initializeHeaderNav() {
     });
 
     const openBtn = document.getElementById("submit");
-    const modal = document.getElementById("modal");
+    const modalHeader = document.getElementById("modal");
     const closeBtn = document.querySelector(".closeBtn");
     const searchInput = document.querySelector(".hd_searchbar input");
 
     openBtn.addEventListener("click", function () {
         if (searchInput.value.trim() === "") {
-            modal.classList.add("active");
+            modalHeader.classList.add("active");
         } else {
             // 실제 검색 기능은 여기에 구현합니다.
             alert(`'${searchInput.value}'(으)로 검색합니다.`);
@@ -47,13 +47,13 @@ function initializeHeaderNav() {
     });
 
     closeBtn.addEventListener("click", function () {
-        modal.classList.remove("active");
+        modalHeader.classList.remove("active");
     });
 
     // 바깥 영역 클릭 시 닫기
-    modal.addEventListener("click", function (e) {
-        if (e.target === modal) {
-            modal.classList.remove("active");
+    modalHeader.addEventListener("click", function (e) {
+        if (e.target === modalHeader) {
+            modalHeader.classList.remove("active");
         }
     });
 }
