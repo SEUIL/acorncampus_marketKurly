@@ -259,6 +259,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     // 회원가입 완료 후 메인 페이지로 이동
-    window.location.href = "/login.html";
+    window.location.href = "login.html";
   });
 });
