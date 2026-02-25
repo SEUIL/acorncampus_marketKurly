@@ -43,8 +43,8 @@ function initializeHeader() {
   } else {
     // 로그인되지 않은 상태일 때 로그인/회원가입 버튼 표시
     memberMenuList.innerHTML = `
-      <li><a href="/signUp.html">회원가입</a></li>
-      <li><a href="/login.html">로그인</a></li>
+      <li><a href="signUp.html">회원가입</a></li>
+      <li><a href="login.html">로그인</a></li>
       ${customerServiceHTML}
     `;
   }
