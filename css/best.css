@@ -77,8 +77,11 @@
         margin: 0 auto;
         width: 55%;
         display: flex;
-       
+        margin-bottom: 150px;
       }
+
+
+      /* ///////  왼쪽 filter //////// */
 
       .best_filter {
         /* background-color: lightblue; */
@@ -118,6 +121,7 @@
 
       .best_filter_box {
         padding: 30px 10px;
+        border-bottom: 1px solid var(--border-color);
 
          position: sticky;
          top: 0px; /* 헤더 높이에 맞게 */
@@ -378,10 +382,12 @@
 
 
        /* 쿠폰증정 */
-       .best_coupon {
-        background-color: var(--sub-purple);
+         .best_coupon {
+          background-color:#bd76ff;
+        font-family:  "Noto Sans KR", sans-serif;
+        font-weight: 500;
         color: #fff;
-        width: 120px;
+        width: 110px;
         height: 30px;
         border-radius: 5px;
         padding: 5px 0px;
