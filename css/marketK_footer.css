@@ -122,7 +122,7 @@ footer{
     display: flex;
 }
 
-.modal_content {
+.modal_content_footer {
     background: white;
     padding-top: 20px;
     padding-bottom: 30px;

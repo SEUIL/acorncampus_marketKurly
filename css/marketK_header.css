@@ -1,3 +1,10 @@
+/* 헤더 전체를 감싸는 래퍼 */
+.header-wrapper {
+  position: relative; /* 자식 요소(nav, category 등)의 position 기준 + 쌓임 맥락(stacking context) 생성 */
+  z-index: 100;       /* main 콘텐츠보다 위에 표시되도록 z-index 설정 */
+  background-color: white; /* 스크롤 시 다른 콘텐츠가 비치지 않도록 배경색 지정 */
+}
+
 header.header {
   position: relative;
   width: 1050px;
@@ -262,7 +269,7 @@ nav {
   color: var(--main-purple);
 }
 
-.modal {
+.modalHeader {
   display: none; /* 기본 숨김 */
   position: fixed;
   top: 0;
@@ -274,7 +281,7 @@ nav {
   align-items: center;
 }
 
-.modal.active {
+.modalHeader.active {
   display: flex;
 }
 
@@ -288,6 +295,7 @@ nav {
   position: relative;
   text-align: center;
   line-height: 20px;
+  z-index: 2000;
 }
 
 .closeBtn {
